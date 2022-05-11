@@ -7,13 +7,15 @@ const UserFilter = (props) => (<Filter {...props}>
 
 function UserList(props) {
   return (
-    <div>
-      <List {...props}>
+    <List {...props} filters={<UserFilter />}>
         <Datagrid>
-            <TextField source="username" />
+            <TextField source='id' />
+            <TextField source='name' />
+            <TextField source='email' />
+            <EditButton basePath='/users' />
+            <DeleteButton basePath='/users' />
         </Datagrid>
     </List>
-    </div>
   );
   
 }

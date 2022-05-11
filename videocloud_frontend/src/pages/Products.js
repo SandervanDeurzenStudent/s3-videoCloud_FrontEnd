@@ -11,7 +11,7 @@ constructor(props){
 }
 
 componentDidMount() {
-  fetch("http://localhost:8080/api/products")
+  fetch("http://localhost:8080/api/products/")
   .then(res => res.json())
   .then(json => {
     this.setState({
