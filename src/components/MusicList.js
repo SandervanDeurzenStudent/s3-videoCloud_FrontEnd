@@ -1,23 +1,23 @@
 import React from 'react'
 import { List, Datagrid, TextField, DateField, EditButton, DeleteButton, Filter, SearchInput } from 'react-admin'
 
-const ProductFilter = (props) => (<Filter {...props}>
-  <SearchInput placeholder='Product Name' source='title' resettable alwaysOn />
+const MusicFilter = (props) => (<Filter {...props}>
+  <SearchInput placeholder='Music Name' source='title' resettable alwaysOn />
 </Filter>)
 
-function ProductList(props) {
+function MusicList(props) {
   return (
-    <List {...props} filters={<ProductFilter />}>
+    <List {...props} filters={<MusicFilter />}>
         <Datagrid>
             <TextField source='id' />
             <TextField source='title' />
             <TextField source='description' />
-            <EditButton basePath='/products' />
-            <DeleteButton basePath='/products' />
+            <EditButton basePath='/musics' />
+            <DeleteButton basePath='/musics' />
         </Datagrid>
     </List>
   );
   
 }
 
-export default ProductList
+export default MusicList

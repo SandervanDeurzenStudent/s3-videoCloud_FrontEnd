@@ -3,7 +3,7 @@ import {
     Edit, SimpleForm, TextInput,
 } from 'react-admin';
 
-const ProductEdit = (props) => (
+const MusicEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput disabled source='id' />
@@ -13,4 +13,4 @@ const ProductEdit = (props) => (
     </Edit>
 );
 
-export default ProductEdit
+export default MusicEdit
